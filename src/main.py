@@ -6,12 +6,12 @@ from recommendation_engine import NutritionRecommender
 
 if __name__ == "__main__":
     # Initialize file paths and features
-    data_file = "nutrition_data.csv"
+    data_file = "/Users/sour_v/Documents/ML ops/nutri_recommender/data/food_data.csv"
     output_file = "cleaned_data.csv"
     feature_columns = ['Calories', 'Protein', 'Fat', 'Carbs']
     
     # Load and preprocess data
-    data_handler = DataHandler(data_file)
+    data_handler = DataHandler(filepath=data_file)
     data = data_handler.load_data()
 
     preprocessor = Preprocessor()

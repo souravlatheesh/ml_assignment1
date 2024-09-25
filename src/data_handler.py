@@ -1,14 +1,15 @@
 import pandas as pd
 
 class DataHandler:
-    def _init_(self, filepath):
-        self.filepath = '/Users/sour_v/Documents/ML ops/nutri_recommender/data/food_data.csv'  
+    def __init__(self, filepath):  # Accepts filepath as an argument
+        self.filepath = filepath
+    
     def load_data(self):
         try:
-            data = pd.read_csv(self.filepath)
+            data = pd.read_csv(self.filepath)  # Uses the filepath passed in the constructor
             return data
         except FileNotFoundError:
-            print("File not found!")
+            print(f"File not found at {self.filepath}!")
             return None
 
     def save_data(self, data, output_path):
