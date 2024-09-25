@@ -2,7 +2,7 @@ import pandas as pd
 
 class DataHandler:
     def _init_(self, filepath):
-        self.filepath = filepath
+        self.filepath = /Users/sour_v/Documents/ML ops/nutri_recommender/data/food_data.csv
     
     def load_data(self):
         try:
