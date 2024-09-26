@@ -1,1 +1,1 @@
-this project is about about nutrition recommendation system
+this is a nutrition reccomender
